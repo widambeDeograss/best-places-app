@@ -4,6 +4,7 @@ import PlacesListScreen from "../screens/PlacesListScreen";
 import NewPlacesScreen from '../screens/NewPlacesScreen';
 import { Button, Platform } from 'react-native';
 import Colors from '../constants/Colors';
+import PlaceDetailScreen from '../screens/PlaceDetailScreen';
 
 const Stack = createStackNavigator()
 
@@ -34,6 +35,8 @@ function PlacesNavigator() {
         options={
             {headerTitle:'Add Place'}
         }
+        />
+           <Stack.Screen name='placeDetail'  component={PlaceDetailScreen} 
         />
       
     </Stack.Navigator>
